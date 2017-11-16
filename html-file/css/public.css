@@ -1,0 +1,40 @@
+/* Header Star */
+#header{max-width: 1366px;height: 120px;width: 100%;margin: 0 auto;position: relative;overflow: hidden;}
+#header .header-left{ height: 120px;width: 250px;background-color: #cc0000;position: absolute;left: 0;}
+#header .header-right{ height: 115px;width: 250px;background-color: #ff8800;position: absolute;right: 0;padding-top: 5px;}
+#header .header-main{ background-color: #dadada;width: 100%;height: 100%;float: left;}
+#header .header-main .main-content{ padding: 6px 260px;}
+#header .header-logo { max-width: 250px;max-height: 120px;}
+#header .header-right .recommend-item{font-size: 16px;color: #fff;display: block;}
+#header .header-right .recommend-item:hover{ text-decoration: none; background-color: rgba(255,255,255,0.2)}
+#header .header-right .iconfont{font-size: 18px;}
+#header .header-main-link {display: inline-block;font-size: 16px; color: #fff;padding: 4px 10px;margin: 0 5px 5px 0;}
+#header .header-main-link:hover{border-radius: 10px }
+
+/* 内容区域 */
+#bodyer{max-width: 1366px;margin: 0 auto;position: relative;}
+#bodyer .bodyer-left-menu{
+    background-color: #333;
+    position: fixed;
+    width: 220px;
+    padding: 10px 10px 10px 20px ;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    /*top: 120px;*/
+    padding-bottom: 50px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#bodyer .bodyer-left-menu .catalog-link{  color: #ccc;font-size: 16px;display: inline-block;height: 28px;line-height: 28px;  }
+#bodyer .bodyer-left-menu .catalog-link:hover{  color: #fff;  }
+#bodyer .bodyer-right-link {
+    position: absolute;
+    width: 250px;background-color: #fff;
+    right: 0;
+    padding-top: 5px;
+
+}
+#bodyer .bodyer-right-link .catalog-item-link{  color: #444;font-size: 16px;display: inline-block;height: 28px;line-height: 28px;  }
+#bodyer .bodyer-right-link .catalog-item-link:hover{  color: #fff;  }
+.bodyer-main{width: 100%;}
