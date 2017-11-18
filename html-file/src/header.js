@@ -1,6 +1,10 @@
 var $Header=$("#header");
 var $Bodyer=$("#bodyer");
 
+var $headerMain=$Header.find(".j-header-main");
+var $headerLeft=$Header.find(".j-header-left");
+var $BodyerLeft=$Bodyer.find(".j-bodyer-left-menu");
+
 var pageUtility={
     init:function () {
         this.header();
@@ -15,12 +19,14 @@ var pageUtility={
         });
     },
     catalogLink:function () {
-        /*var fixedLeft=$Header.find(".j-header-left").offset().left;
-        $Bodyer.find(".j-bodyer-left-menu").css({left:fixedLeft});
+        var fixedLeft=$headerMain.offset().left;
+        $BodyerLeft.css({left:fixedLeft});
+        $headerLeft.css({left:fixedLeft});
         $(window).resize(function(){
-            fixedLeft=$Header.find(".j-header-left").offset().left;
-            $Bodyer.find(".j-bodyer-left-menu").css({left:fixedLeft});
-        });*/
+            fixedLeft=$headerMain.offset().left;
+            $BodyerLeft.css({left:fixedLeft});
+            $headerLeft.css({left:fixedLeft});
+        });
     }
 };
 pageUtility.init();
